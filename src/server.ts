@@ -1,4 +1,4 @@
-import prisma from "../src/database"
+import prisma from "./database"
 
 const express = require("express")
 const app = express()
@@ -14,7 +14,8 @@ app.post("/signup", async (req, res, next) => {
 
     const user = await prisma.user.findUnique({
         where: {
-            name: req.body.name
+            name: req.body.name,
+            password: req.body.password
         }
     })
 
@@ -22,7 +23,7 @@ app.post("/signup", async (req, res, next) => {
         const user = await prisma.user.create({
             data: {
                 name: req.body.name,
-                password: req.body.name
+
 
             }
         })
