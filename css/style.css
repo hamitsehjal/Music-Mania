@@ -6,6 +6,7 @@
 .header{
     font-family: 'Oswald', sans-serif;
     font-size: 3rem;
+    padding:0 1rem;
 }
 
 .header-item{
@@ -25,7 +26,11 @@
     cursor: pointer;
 }
 
-
+.playlist{
+    margin:2rem;
+    width: 40%;
+    height:30%;
+}
 @media(max-width:1117px)
 {
     .header-item{
