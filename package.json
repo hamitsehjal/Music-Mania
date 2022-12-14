@@ -4,8 +4,7 @@
   "description": "A next generation Music app that lets folks download and upload Music for free",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "devStart": "nodemon ./src/server.ts"
+    "dev": "nodemon src/server.ts "
   },
   "repository": {
     "type": "git",
